@@ -1,0 +1,137 @@
+<!-- =========================================================
+     TEAMS OF TOMORROW - Subscription Page
+     Paste this entire block into a Circle.so Custom HTML block
+     (Page editor -> Add block -> HTML)
+     v2 - heartbeat pulse on The Circle card orange elements
+     ========================================================= -->
+
+<meta charset="UTF-8">
+
+<style>
+@keyframes tot-heartbeat {
+  0%   { opacity: 1; }
+  14%  { opacity: 0.35; }
+  28%  { opacity: 1; }
+  42%  { opacity: 0.55; }
+  56%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes tot-border-pulse {
+  0%   { border-color: #F2955E; }
+  14%  { border-color: rgba(242,149,94,0.25); }
+  28%  { border-color: #F2955E; }
+  42%  { border-color: rgba(242,149,94,0.45); }
+  56%  { border-color: #F2955E; }
+  100% { border-color: #F2955E; }
+}
+
+.tot-circle-badge {
+  animation: tot-heartbeat 3.2s ease-in-out infinite;
+}
+
+.tot-circle-border {
+  animation: tot-border-pulse 3.2s ease-in-out infinite;
+}
+
+.tot-circle-heading {
+  animation: tot-heartbeat 3.2s ease-in-out infinite;
+}
+
+.tot-circle-cta {
+  animation: tot-heartbeat 3.2s ease-in-out infinite;
+}
+
+@media (max-width: 820px) {
+  .tot-subscription-page .tot-tiers { grid-template-columns: 1fr !important; }
+  .tot-subscription-page { padding: 2rem 1.25rem !important; }
+}
+</style>
+
+<div class="tot-subscription-page" style="background:#EAE6DA;border-radius:12px;padding:3.5rem 2rem 3rem;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#034159;max-width:1100px;margin:0 auto;">
+
+  <!-- HERO -->
+  <div style="text-align:center;max-width:620px;margin:0 auto 2.5rem;">
+    <p style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#BFA084;margin:0 0 1.5rem;font-weight:500;">Teams of Tomorrow&reg;</p>
+    <p style="font-family:Georgia,'Times New Roman',serif;font-size:26px;font-style:italic;font-weight:400;color:#034159;margin:0 0 1.75rem;line-height:1.35;">
+      If leading is lonely in a way that nobody around you can understand &mdash; there is a small, quiet place where leaders who know, gather.
+    </p>
+    <div style="width:40px;height:1px;background:#BFA084;margin:0 auto 1.75rem;"></div>
+    <p style="font-size:14px;color:#034159;margin:0;line-height:1.7;opacity:0.8;">Three ways in. One dialogue at the heart of all of them.<br>You arrive at the one that meets where you are.</p>
+  </div>
+
+  <!-- TIERS -->
+  <div class="tot-tiers" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch;">
+
+    <!-- THRESHOLD -->
+    <div style="background:#FBF8F0;border-radius:10px;padding:1.75rem 1.5rem;border:0.5px solid rgba(3,65,89,0.15);display:flex;flex-direction:column;">
+      <p style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#BFA084;margin:0 0 0.5rem;font-weight:500;">Tier one &bull; the doorway</p>
+      <h2 style="font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;color:#F2955E;margin:0 0 0.5rem;">The Threshold</h2>
+      <p style="font-size:13px;color:#034159;opacity:0.7;font-style:italic;margin:0 0 1.25rem;line-height:1.55;">For leaders who suspect there is a better way, and are willing to spend a few minutes a week finding out</p>
+
+      <div style="border-top:0.5px solid rgba(3,65,89,0.15);padding-top:0.9rem;margin-bottom:1.1rem;">
+        <p style="font-size:22px;font-weight:500;color:#034159;margin:0 0 0.25rem;">Free</p>
+        <p style="font-size:12px;color:#034159;opacity:0.65;margin:0;">No commitment &bull; begin with the Scorecard</p>
+      </div>
+
+      <p style="font-size:13px;color:#034159;margin:0 0 1rem;line-height:1.6;">One good question a week. One real teaching a month. A small, slow-growing library. A place to begin.</p>
+
+      <ul style="list-style:none;padding:0;margin:0 0 1.5rem;font-size:13px;color:#034159;line-height:1.65;">
+        <li style="padding-left:1rem;position:relative;margin-bottom:0.6rem;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">Monthly Master Class</strong><span style="opacity:0.75;font-size:12px;">60 to 75 minutes, live with Elly or Chris</span></li>
+        <li style="padding-left:1rem;position:relative;margin-bottom:0.6rem;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">The Monday Prompt</strong><span style="opacity:0.75;font-size:12px;">One question, every Monday, in your inbox</span></li>
+        <li style="padding-left:1rem;position:relative;margin-bottom:0.6rem;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">The Practice Library</strong><span style="opacity:0.75;font-size:12px;">Tools you can use in a team meeting on Monday</span></li>
+        <li style="padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">The Regenerative Leader Scorecard</strong><span style="opacity:0.75;font-size:12px;">15 questions, 7 minutes, the way in</span></li>
+      </ul>
+
+      <a href="#scorecard" style="margin-top:auto;text-align:center;background:transparent;color:#034159;border:1px solid #034159;border-radius:999px;padding:0.8rem 1rem;font-size:13px;font-weight:500;letter-spacing:0.02em;text-decoration:none;">Take the Scorecard</a>
+    </div>
+
+    <!-- CIRCLE -->
+    <div class="tot-circle-border" style="background:#034159;border-radius:10px;padding:1.75rem 1.5rem;border:2px solid #F2955E;display:flex;flex-direction:column;position:relative;">
+      <div class="tot-circle-badge" style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#F2955E;color:#4A1B0C;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;padding:5px 14px;border-radius:999px;white-space:nowrap;">The heart of it</div>
+
+      <p style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#BFA084;margin:0.25rem 0 0.5rem;font-weight:500;">Tier two &bull; the core work</p>
+      <h2 class="tot-circle-heading" style="font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;color:#F2955E;margin:0 0 0.5rem;">The Circle</h2>
+      <p style="font-size:13px;color:#BFA084;font-style:italic;margin:0 0 1.25rem;line-height:1.55;">For leaders at a turning point, ready to say what is actually true about where they are</p>
+
+      <div style="border-top:0.5px solid rgba(191,160,132,0.3);padding-top:0.9rem;margin-bottom:1.1rem;">
+        <p style="font-size:22px;font-weight:500;color:#EAE6DA;margin:0 0 0.25rem;">&pound;650 / month</p>
+        <p style="font-size:12px;color:#BFA084;margin:0 0 0.15rem;opacity:0.85;">or &pound;6,500 / year &bull; save &pound;1,300</p>
+        <p style="font-size:12px;color:#BFA084;margin:0;">Twelve weeks &bull; eight people &bull; by application</p>
+      </div>
+
+      <p style="font-size:13px;color:#EAE6DA;margin:0 0 1rem;line-height:1.6;">Eight leaders who don't know each other become eight leaders who do. Two or three real relationships that continue outside the room.</p>
+
+      <ul style="list-style:none;padding:0;margin:0 0 1.5rem;font-size:13px;color:#EAE6DA;line-height:1.65;">
+        <li style="padding-left:1rem;position:relative;margin-bottom:0.6rem;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">Weekly 90-minute dialogue</strong><span style="opacity:0.8;font-size:12px;">Same eight people, twelve weeks, no rotation</span></li>
+        <li style="padding-left:1rem;position:relative;margin-bottom:0.6rem;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">Fortnightly 1:1 with Elly or Chris</strong><span style="opacity:0.8;font-size:12px;">Thirty minutes, structured, confidential</span></li>
+        <li style="padding-left:1rem;position:relative;margin-bottom:0.6rem;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">A private thinking space for your eight</strong><span style="opacity:0.8;font-size:12px;">Not a chat channel &mdash; a place to keep thinking</span></li>
+        <li style="padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:#A4BF69;font-weight:700;font-size:16px;top:-2px;">&bull;</span><strong style="font-weight:500;display:block;">Everything in the Threshold</strong><span style="opacity:0.8;font-size:12px;">Including six months of access after you graduate</span></li>
+      </ul>
+
+      <a href="#apply" class="tot-circle-cta" style="margin-top:auto;text-align:center;background:#F2955E;color:#4A1B0C;border:none;border-radius:999px;padding:0.8rem 1rem;font-size:13px;font-weight:500;letter-spacing:0.02em;text-decoration:none;display:block;">Apply for the next Circle</a>
+    </div>
+
+    <!-- SANCTUARY -->
+    <div style="background:#FBF8F0;border-radius:10px;padding:1.75rem 1.5rem;border:0.5px solid rgba(3,65,89,0.15);display:flex;flex-direction:column;justify-content:space-between;">
+      <div>
+        <p style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#BFA084;margin:0 0 0.5rem;font-weight:500;">Tier three &bull; the standing table</p>
+        <h2 style="font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;color:#F2955E;margin:0 0 1.5rem;">The Sanctuary</h2>
+
+        <p style="font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#034159;line-height:1.7;margin:0 0 1.5rem;font-style:italic;opacity:0.9;">A small, standing table for leaders at similar altitude. By invitation.</p>
+
+        <span style="display:inline-block;background:rgba(191,160,132,0.25);color:#034159;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;padding:6px 12px;border-radius:999px;">Opening autumn 2026</span>
+      </div>
+
+      <a href="#sanctuary" style="margin-top:2rem;font-size:13px;color:#034159;text-decoration:none;font-weight:500;border-bottom:0.5px solid rgba(3,65,89,0.4);padding-bottom:2px;display:inline-block;align-self:flex-start;">Read more about the Sanctuary &rarr;</a>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div style="text-align:center;margin-top:3rem;padding-top:2rem;border-top:0.5px solid rgba(3,65,89,0.2);max-width:600px;margin-left:auto;margin-right:auto;">
+    <p style="font-family:Georgia,'Times New Roman',serif;font-size:16px;font-style:italic;color:#034159;margin:0 0 0.5rem;line-height:1.5;">Movement between tiers is earned, not upsold.</p>
+    <p style="font-size:12px;color:#034159;opacity:0.65;margin:0;line-height:1.6;">Readiness is the gate. Not wealth, not branding.</p>
+  </div>
+
+</div>
